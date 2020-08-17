@@ -20,7 +20,7 @@ server.login('factdroidtest@gmail.com', password)
 #Create the message object
 msg = MIMEMultipart()
 msg['From'] = 'Osam'
-msg['To'] = 'factsdroid@gmail.com'
+msg['To'] = 'XXXXXXXXXXXXXXX'
 msg['Subject'] = "Trying out Python Mailing Client"
 
 with open('message.txt', 'r') as f:
@@ -48,4 +48,4 @@ msg.attach(p)
 text = msg.as_string()
 
 #Send the email
-server.sendmail('factdroidtest@gmail.com', 'factsdroid@gmail.com', text)
+server.sendmail('factdroidtest@gmail.com', 'XXXXXXXXXXXX', text)
